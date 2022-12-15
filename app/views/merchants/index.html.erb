@@ -1,0 +1,4 @@
+<% @merchants[:data].each do |merchant| %>
+
+  <p><%=link_to "#{merchant[:attributes][:name]}", "merchants/#{merchant[:id]}", method: :get %></p>
+<% end %>
